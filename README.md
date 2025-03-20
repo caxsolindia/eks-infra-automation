@@ -16,24 +16,18 @@ This repository demonstrates the practical steps to set up and automate an EKS c
 EKS-Terraform-GitHub-Actions/
 ├── .github/
 │   └── workflows/
-│       └── terraform-ci.yml
-|       └── terraform-cd.yml
+│       └── terraform.yml
 ├── eks/
 │   ├── main.tf
 │   ├── variables.tf
-│   ├── outputs.tf
-│   └── provider.tf
+│   ├── backend.tf
+│   └── dev.tfvars
 ├── module/
-│   ├── vpc/
-│   │   ├── main.tf
-│   │   ├── variables.tf
-│   │   ├── outputs.tf
-│   │   └── provider.tf
-│   └── iam/
-│       ├── main.tf
-│       ├── variables.tf
-│       ├── outputs.tf
-│       └── provider.tf
+│   ├── eks.tf
+│   ├── gather.tf 
+│   ├── iam.tf  
+│   ├── variables.tf  
+│   ├── vpc.tf         
 └── README.md
 ```
 # GitHub Actions for CI/CD
